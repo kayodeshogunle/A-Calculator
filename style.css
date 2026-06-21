@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, rgb(4, 0, 44), rgb(0, 0, 255),  rgb(0, 0, 57) );
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.content {
+    position: relative;
+    top: 20px;
+    left: 0;
+    animation: calcul 3s ease-in-out normal;
+}
+@keyframes calcul {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+}
+button {
+    width: 70px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+    'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    box-shadow: 0px 0px 3px #ffffffd1;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(40, 40, 236);
+}
+@keyframes color {
+    50% {
+        background-color: rgb(0, 0, 149);
+    }
+    60% {
+        background-color: rgb(0, 0, 79);
+    }
+}
+.equalBtn {
+    color: #fff;
+   background-color: #f40d;
+}
+.equalBtn:hover {
+    background-color: #f40d;
+}
+input {
+    width: 326px;
+    height: 70px;
+    position: relative;
+    top: -7px;
+    left: 1px;
+    background: transparent;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 4px #ffffff;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+    'Lucida Sans', Arial, sans-serif;
+    text-align: right;
+    font-size: 30px;
+    color: #fff;
+}
+input::placeholder {
+    color: #fff;
+    position: relative;
+    left: -10px;
+}
+.operator {
+    color: rgb(255, 251, 0);
+}
+.operator:hover  {
+     animation: color 3s ease-in-out infinite normal;
+}
